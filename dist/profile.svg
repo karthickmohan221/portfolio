@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="200" y1="0" x2="200" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="45%" stop-color="#6366f1"/>
+      <stop offset="75%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="200" y1="180" x2="200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="520" fill="url(#sky)"/>
+  <ellipse cx="200" cy="430" rx="160" ry="40" fill="#0f172a" fill-opacity="0.25"/>
+  <circle cx="200" cy="195" r="72" fill="#1e293b" fill-opacity="0.55"/>
+  <ellipse cx="200" cy="360" rx="95" ry="115" fill="#1e293b" fill-opacity="0.55"/>
+  <ellipse cx="200" cy="250" rx="130" ry="95" fill="url(#glow)"/>
+</svg>
