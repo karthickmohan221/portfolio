@@ -1,6 +1,6 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
-import useReveal from '../hooks/useReveal';
+import React from "react";
+import { Mail, Phone, MapPin, Github, Linkedin, Download } from "lucide-react";
+import useReveal from "../hooks/useReveal";
 
 export default function Contact() {
   const ref = useReveal();
@@ -22,20 +22,36 @@ export default function Contact() {
           you.
         </p>
 
-        <div className="mb-12">
+        <div className="mb-12 flex flex-wrap justify-center gap-4">
           <a
             href="mailto:karthickmohan221@gmail.com"
             className="
-              inline-flex items-center gap-2
-              bg-elevated border border-border-soft
-              px-8 py-4 rounded-lg
-              text-base text-strong
-              hover:border-accent-theme hover:text-accent-soft
-              transition
-            "
+      inline-flex items-center gap-2
+      bg-elevated border border-border-soft
+      px-8 py-4 rounded-lg
+      text-base text-strong
+      hover:border-accent-theme hover:text-accent-soft
+      transition
+    "
           >
             <Mail size={18} />
-            karthickmohan221@gmail.com
+            Email Me
+          </a>
+
+          <a
+            href="/resume.pdf"
+            download
+            className="
+      inline-flex items-center gap-2
+      bg-accent-theme text-black
+      px-8 py-4 rounded-lg
+      font-medium
+      hover:opacity-90
+      transition
+    "
+          >
+            <Download size={18} />
+            Download Resume
           </a>
         </div>
 
@@ -53,11 +69,15 @@ export default function Contact() {
 
         <div className="flex justify-center gap-4">
           {[
-            { icon: Github, href: 'https://github.com/karthickmohan221', label: 'GitHub' },
+            {
+              icon: Github,
+              href: "https://github.com/karthickmohan221",
+              label: "GitHub",
+            },
             {
               icon: Linkedin,
-              href: 'https://linkedin.com/in/karthick-mohan-387670246',
-              label: 'LinkedIn',
+              href: "https://linkedin.com/in/karthick-mohan-387670246",
+              label: "LinkedIn",
             },
           ].map(({ icon: Icon, href, label }) => (
             <a
