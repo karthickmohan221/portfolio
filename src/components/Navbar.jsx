@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Sun, Moon, Menu, X, Code2 } from "lucide-react";
+import { Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "../contexts/ThemeContext";
+import logo from "/favicon.png";
 
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-    { href: "#education", label: "Education" },
+  { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -33,18 +34,19 @@ export default function Navbar() {
                      rounded-full border border-border-theme/60
                      bg-card backdrop-blur-md header-pill"
         >
-          {/* Brand */}
-          <a href="#home" className="flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0">
-            <span
-              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center
-                         text-white shrink-0"
-              style={{ backgroundColor: "#22c55e" }}
-            >
-              <Code2 size={14} strokeWidth={2.5} />
+          <a
+            href="#home"
+            className="flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0"
+          >
+            <img
+              src={logo}
+              alt="KM Logo"
+              className="w-8 h-8 sm:w-11 sm:h-11 object-contain shrink-0"
+            />
+
+            <span className="font-semibold text-strong text-sm sm:text-[15px] truncate">
+              Karthick
             </span>
-              <span className="font-semibold text-strong text-sm sm:text-[15px] truncate">
-                Karthick
-              </span>
           </a>
 
           {/* Desktop nav */}
