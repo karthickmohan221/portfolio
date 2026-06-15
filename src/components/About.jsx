@@ -1,11 +1,12 @@
 import React from 'react';
+import CountUp from 'react-countup';
 import useReveal from '../hooks/useReveal';
 
 const stats = [
-  { value: '3+', label: 'Years Experience' },
-  { value: '20%', label: 'Faster Data Processing' },
-  { value: '15%', label: 'Reduced Page Load Time' },
-  { value: '5+', label: 'Production Apps Shipped' },
+  { value: 3, suffix: '+', label: 'Years Experience' },
+  { value: 20, suffix: '%', label: 'Faster Data Processing' },
+  { value: 15, suffix: '%', label: 'Reduced Page Load Time' },
+  { value: 5, suffix: '+', label: 'Production Apps Shipped' },
 ];
 
 export default function About() {
@@ -25,24 +26,26 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] gap-12 items-start">
           <div className="text-muted text-base leading-8 reveal">
             <p className="mb-5">
-              I'm a Full Stack Developer based in Coimbatore, Tamil Nadu, building and
-              deploying scalable web applications across healthcare, e-learning,
-              networking, and entertainment domains.
+              I'm a Full Stack Developer based in Coimbatore, Tamil Nadu,
+              building and deploying scalable web applications across
+              healthcare, e-learning, networking, and entertainment domains.
             </p>
 
             <p className="mb-5">
-              Skilled in <span className="text-strong font-semibold">React.js</span>,{' '}
+              Skilled in{' '}
+              <span className="text-strong font-semibold">React.js</span>,{' '}
               <span className="text-strong font-semibold">Next.js</span>,{' '}
               <span className="text-strong font-semibold">Node.js</span> and{' '}
-              <span className="text-strong font-semibold">AWS</span>, with a track record
-              of improving application performance — including a 20% increase in data
-              processing efficiency and a 15% reduction in page load time.
+              <span className="text-strong font-semibold">AWS</span>, with a
+              track record of improving application performance — including a
+              20% increase in data processing efficiency and a 15% reduction in
+              page load time.
             </p>
 
             <p>
               I focus on delivering production-ready platforms with secure
-              authentication, clean architecture, and optimized user experiences —
-              from first commit to live deployment.
+              authentication, clean architecture, and optimized user
+              experiences — from first commit to live deployment.
             </p>
           </div>
 
@@ -50,11 +53,18 @@ export default function About() {
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="p-6 border border-border-theme rounded-xl bg-elevated hover:bg-card transition"
+                className="p-6 border border-border-theme rounded-xl bg-elevated hover:bg-card transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="text-3xl font-bold text-accent-theme mb-2">
-                  {s.value}
+                  <CountUp
+                    end={s.value}
+                    duration={2.5}
+                    suffix={s.suffix}
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
                 </div>
+
                 <div className="text-xs text-muted leading-snug">
                   {s.label}
                 </div>
