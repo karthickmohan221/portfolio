@@ -1,99 +1,150 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <meta name="color-scheme" content="dark light" />
-    <script>
-      (function () {
-        var saved = localStorage.getItem("theme");
-        var theme =
-          saved === "light" || saved === "dark"
-            ? saved
-            : window.matchMedia("(prefers-color-scheme: light)").matches
-              ? "light"
-              : "dark";
-        document.documentElement.setAttribute("data-theme", theme);
-      })();
-    </script>
-    <meta
-      name="description"
-      content="Karthick Mohan (KM Stack) is a Full Stack Developer with 2.6+ years of experience in React.js, Next.js, Node.js, Spring Boot, AWS, PostgreSQL and MongoDB. Based in Coimbatore, India."
-    />
-    <meta
-      name="keywords"
-      content="Karthick Mohan, KM Stack, kmstack, Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, Spring Boot Developer, AWS Developer, Coimbatore"
-    />
+<head>
+  <meta charset="UTF-8" />
 
-    <meta name="author" content="Karthick Mohan" />
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-    <meta name="theme-color" content="#0b0f19" />
-    <link rel="canonical" href="https://www.kmstack.in/" />
-    <meta property="og:type" content="website" />
-   <meta property="og:site_name" content="KM Stack Portfolio" />
-<meta property="og:title" content="Karthick Mohan (KM Stack) | Full Stack Developer" />
-    <meta
-      property="og:description"
-      content="Karthick M — Full Stack Developer building scalable web apps with React, Next.js, Node.js and AWS. Based in Coimbatore, Tamil Nadu, India. Available worldwide / remote."
-    />
-    <meta property="og:url" content="https://www.kmstack.in/" />
-    <meta
-      property="og:image"
-      content="https://www.kmstack.in/Profile-Image.jpeg"
-    />
-<meta property="og:image:alt" content="Karthick Mohan (KM Stack)" />
-    <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Karthick Mohan (KM Stack) | Full Stack Developer" />
-    <meta
-      name="twitter:description"
-      content="Karthick M — Full Stack Developer building scalable web apps with React, Next.js, Node.js and AWS."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.kmstack.in/Profile-Image.jpeg"
-    />
-    <title>
-      Karthick Mohan (KM Stack) | Full Stack Developer | React & Next.js
-      Developer
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-       "name": "Karthick Mohan",
-       "alternateName": "KM Stack",
-        "url": "https://www.kmstack.in/",
-        "image": "https://www.kmstack.in/Profile-Image.jpeg",
-        "jobTitle": "Full Stack Developer",
-        "description": "Full Stack Developer building scalable web apps with React, Next.js, Node.js and AWS.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Coimbatore",
-          "addressRegion": "Tamil Nadu",
-          "addressCountry": "IN"
-        },
-        "sameAs": [
-          "https://github.com/karthickmohan221",
-          "https://linkedin.com/in/karthick-mohan-387670246"
-        ]
-      }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <!-- Viewport -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#8B2CF5" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- SEO -->
+  <title>KM Stack | Karthick Mohan | Full Stack Developer</title>
+
+  <meta
+    name="description"
+    content="KM Stack — Portfolio of Karthick Mohan, Full Stack Developer with 2.6+ years of experience in React.js, Next.js, Node.js, Spring Boot, AWS, PostgreSQL and MongoDB."
+  />
+
+  <meta
+    name="keywords"
+    content="KM Stack, Karthick Mohan, Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, Spring Boot Developer, AWS Developer, PostgreSQL, MongoDB, Coimbatore"
+  />
+
+  <meta name="author" content="Karthick Mohan" />
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+
+  <link rel="canonical" href="https://kmstack.in/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KM Stack" />
+
+  <meta
+    property="og:title"
+    content="KM Stack | Karthick Mohan | Full Stack Developer"
+  />
+
+  <meta
+    property="og:description"
+    content="Full Stack Developer specializing in React.js, Next.js, Node.js, Spring Boot, AWS, PostgreSQL and MongoDB."
+  />
+
+  <meta property="og:url" content="https://kmstack.in/" />
+
+  <meta
+    property="og:image"
+    content="https://kmstack.in/Profile-Image.jpeg"
+  />
+
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta
+    property="og:image:alt"
+    content="Karthick Mohan - Full Stack Developer"
+  />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="KM Stack | Karthick Mohan | Full Stack Developer"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Full Stack Developer specializing in React.js, Next.js, Node.js, Spring Boot, AWS, PostgreSQL and MongoDB."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://kmstack.in/Profile-Image.jpeg"
+  />
+
+  <meta
+    name="twitter:image:alt"
+    content="Karthick Mohan - Full Stack Developer"
+  />
+
+  <meta name="twitter:url" content="https://kmstack.in/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Theme Loader -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+
+      var theme =
+        saved === "light" || saved === "dark"
+          ? saved
+          : window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Karthick Mohan",
+    "alternateName": "KM Stack",
+    "url": "https://kmstack.in/",
+    "image": "https://kmstack.in/Profile-Image.jpeg",
+    "jobTitle": "Full Stack Developer",
+    "description": "Full Stack Developer with 2.6+ years of experience in React.js, Next.js, Node.js, Spring Boot, AWS, PostgreSQL and MongoDB.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Coimbatore",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/karthickmohan221",
+      "https://linkedin.com/in/karthick-mohan-387670246"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
